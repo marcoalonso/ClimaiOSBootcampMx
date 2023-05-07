@@ -46,7 +46,11 @@ class ClimaViewController: UIViewController, ClimaManagerDelegate {
         showActivityIndicator()
     }
     
-    // MARK: - Actions
+    // MARK: - Functions
+    func setupUI(){
+        nombreCiudadTextField.accessibilityIdentifier = "citiNameTextField"
+    }
+    
     func actualizarClima(clima: ClimaModelo) {
         DispatchQueue.main.async {
             self.temperaturaLabel.text = clima.temperaturaDecimal
@@ -68,22 +72,10 @@ class ClimaViewController: UIViewController, ClimaManagerDelegate {
     
     
     func showActivityIndicator() {
-        
-//        ProgressHUD.show("Cargando")
-        
         ProgressHUD.show("Buscando...", icon: .exclamation)
-        
-//        activityView = UIActivityIndicatorView(style: .large)
-//        activityView?.center = self.view.center
-//        self.view.addSubview(activityView!)
-//        activityView?.startAnimating()
     }
     
     func hideActivityIndicator(){
-        
-//        if (activityView != nil){
-//            activityView?.stopAnimating()
-//        }
         ProgressHUD.remove()
     }
     

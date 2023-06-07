@@ -16,6 +16,7 @@
 		60FCB591290447BE0073D33F /* ClimaData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60FCB590290447BE0073D33F /* ClimaData.swift */; };
 		60FCB593290447DA0073D33F /* ClimaModelo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60FCB592290447DA0073D33F /* ClimaModelo.swift */; };
 		60FCB595290447F10073D33F /* ClimaManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60FCB594290447F10073D33F /* ClimaManager.swift */; };
+		6C3BB7A32A31348100754DE4 /* ClimaManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3BB7A22A31348100754DE4 /* ClimaManagerTests.swift */; };
 		6C4E486729A942AE009F9D6E /* ProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 6C4E486629A942AE009F9D6E /* ProgressHUD */; };
 		6C5F5FFC2A05C50200A04CFF /* ClimaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5F5FFB2A05C50200A04CFF /* ClimaUITests.swift */; };
 		6C5F5FFE2A05C50200A04CFF /* ClimaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5F5FFD2A05C50200A04CFF /* ClimaUITestsLaunchTests.swift */; };
@@ -53,6 +54,7 @@
 		60FCB590290447BE0073D33F /* ClimaData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimaData.swift; sourceTree = "<group>"; };
 		60FCB592290447DA0073D33F /* ClimaModelo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimaModelo.swift; sourceTree = "<group>"; };
 		60FCB594290447F10073D33F /* ClimaManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimaManager.swift; sourceTree = "<group>"; };
+		6C3BB7A22A31348100754DE4 /* ClimaManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimaManagerTests.swift; sourceTree = "<group>"; };
 		6C5F5FF92A05C50200A04CFF /* ClimaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClimaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C5F5FFB2A05C50200A04CFF /* ClimaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimaUITests.swift; sourceTree = "<group>"; };
 		6C5F5FFD2A05C50200A04CFF /* ClimaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimaUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				6CACC18A2A08166100F031B9 /* ClimaTests.swift */,
+				6C3BB7A22A31348100754DE4 /* ClimaManagerTests.swift */,
 			);
 			path = ClimaTests;
 			sourceTree = "<group>";
@@ -321,6 +324,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C3BB7A32A31348100754DE4 /* ClimaManagerTests.swift in Sources */,
 				6CACC18B2A08166100F031B9 /* ClimaTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

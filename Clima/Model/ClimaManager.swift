@@ -7,6 +7,12 @@
 
 import Foundation
 
+enum NetworkError: Error {
+    case badRequest
+    case decodingError
+    case badURL
+}
+
 protocol ClimaManagerDelegate {
     //dos metodos obligatorios que el VC debera de implementar
     func actualizarClima(clima: ClimaModelo)
@@ -75,9 +81,8 @@ struct ClimaManager {
     //decodificacion del archivo JSON a los datos que estableci,
     //y me va retornar el objeto para mi App, pero opcional
     func parseJSON(climaData: Data) -> ClimaModelo? {
-        let decoder = JSONDecoder()
-        
         do {
+            let decoder = JSONDecoder()
             let dataDecodificada = try decoder.decode(ClimaData.self, from: climaData)
             //crear el objClima
             let id = dataDecodificada.weather[0].id
@@ -92,7 +97,7 @@ struct ClimaManager {
         } catch {
             print("Error al decodificar : \(error.localizedDescription)")
             //a traves del delegado le voy a informar al usuario el error
-            delegado?.huboError(cualError: error.localizedDescription)
+            delegado?.huboError(cualError: "\(NetworkError.decodingError)")
             return nil
         }
         
